@@ -1,8 +1,8 @@
 from random import choice
 import time
 
-moves = {'Rock': '🪨', 'Paper': '📄', 'Scissors': '✂'}
-player = input('Rock, Paper or Scissors?').lower()
+moves = {'rock': '🪨', 'paper': '📄', 'scissors': '✂'}
+player = input('rock, paper or scissors?').lower()
 computer = choice(list(moves.keys()))
 
 print(f"\nYou: {moves[player]}")
@@ -14,9 +14,9 @@ print(f"Computer: {moves}[computer]")
 if player == computer:
     print('❤️Tie!')
 
-elif (player == 'Rock' and computer == 'Scissors')  or\
-     (player == 'Paper' and computer == 'Rock')  or\
-     (player == 'Scissors' and computer == 'Paper'):
+elif (player == 'rock' and computer == 'scissors')  or\
+     (player == 'paper' and computer == 'rock')  or\
+     (player == 'scissors' and computer == 'paper'):
     print("You win!")
 else:
     print("You Lose")
